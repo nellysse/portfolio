@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 100px;
+  background-color: #3e4eda;
+}
+.containers {
+  max-width: 1000px;
+  margin: auto;
+  background: rgb(71, 230, 119);
+  padding: 50px;
+  border-radius: 50px;
+}
+
+/* Header и навигация */
+header {
+  background: #3f462e;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 24px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  background:rgb(17, 0, 255);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+nav a:hover {
+  background: #362626;
+}
+
+/* Заголовки и выделения */
+h1, h2, h3 {
+  color: #bb2c2c;
+}
+.highlight {
+  color: rgb(17, 0, 255);
+  font-weight: bold;
+}
+
+/* Изображения */
+img {
+  max-width: 140px;
+  border-radius: 10px;
+}
+
+/* Кнопка */
+.btn {
+  display: inline-block;
+  background: dodgerblue;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: rgb(62, 11, 163);
+}
+
+/* Footer */
+footer {
+  margin-top: 100px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+/* ===================== */
+/* ✅ Таблица */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.info-table caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  padding: 10px 12px;
+  background: #f4f4f4;
+}
+.info-table th,
+.info-table td {
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+.info-table thead th {
+  background: #f0ecec;
+}
+.info-table tbody tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+/* ===================== */
+/* ✅ Медиа */
+.media {
+  margin: 16px 0;
+}
+.media img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.media figcaption {
+  font-size: 14px;
+  color: #222;
+  margin-top: 6px;
+}
+
+/* Видео подстраивается под ширину контейнера */
+.video-fluid {
+  display: block;
+  width: 100%;
+  height: auto;          /* сохраняет пропорции файла */
+  max-width: 100%;       /* на всякий случай */
+}
+
+/* Если пропорции «прыгают» — зафиксируй 16:9 */
+.video-fluid {
+  aspect-ratio: 16 / 9;  /* современный способ */
+  object-fit: contain;   /* или cover, если нужно заполнение с обрезкой */
+}
+
+
+@media (max-width: 768px) {
+  body {
+    margin: 20px;
+  }
+
+  .containers {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .video {
+  max-width: 16px 0;
+  }
+
+  .info-table {
+    font-size: 14px;
+    display: block;
+    overflow-x: auto;
+  }
+}
