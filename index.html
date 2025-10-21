@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <header class="header">
+        
+        <a href="#home" class="logo">Zhanel<span>Usonkul</span></a>
+        
+        <i class="bx bx-moon" id="theme-toggle"></i> 
+        
+        <i class="bx bx-menu" id="menu-icon"></i>
+        
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+      <button id="scroll-top" class="scroll-top">
+        <i class="bx bx-chevron-up"></i>
+    </button>
+    
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Zhanel</span></h1>
+            <h3>I'm a <span>DevOps engineer</span></h3>
+            <p>Student passionate about building bridges between code and deployment.</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/nellysse" target="_blank">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/janel-usonkulova-01b02635a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+                <a href="https://www.instagram.com/nellysse1?igsh=MW9ueXNvanBnNjBt&utm_source=qr" target="_blank">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+            </div>
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>          
+        </div>
+
+        <div class="home-img">
+            <img src="lin.jpg" alt="Zhanel Usonkul">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="blue.jpg" alt="About Zhanel">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>I'm currently expanding my skills in the tech world, 
+                learning the fundamentals of DevOps 
+                while also diving into Java programming, project management, and QA testing.
+                My journey is just beginning,
+                and I'm excited to build a strong foundation across different areas of software development.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Skills</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxs-cloud-upload"></i>
+                    <h4>DevOps</h4>
+                    <p>Experienced in CI/CD, infrastructure as code, and cloud services.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxl-python"></i>
+                    <h4>Python</h4>
+                    <p>Proficient in Python programming for automation and scripting tasks.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxl-docker"></i>
+                    <h4>Docker</h4>
+                    <p>Experienced in containerizing applications using Docker for consistent environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Me</h2> 
+
+        <form action="https://formspree.io/f/xqayngvp" method="POST">
+            <div class="contact-container">
+                <div class="input-fields">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <input type="text" name="city" placeholder="City" required>
+                </div>
+                
+                <div class="message-field">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://github.com/nellysse" target="_blank">
+                <i class="bx bxl-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/janel-usonkulova-01b02635a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a href="https://www.instagram.com/nellysse1?igsh=MW9ueXNvanBnNjBt&utm_source=qr" target="_blank">
+                <i class="bx bxl-instagram-alt"></i>
+            </a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#services">Skills</a>
+            </li>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#contact">Contact Me</a>
+            </li>
+        </ul>
+
+        <p class="copyright">
+            ®Zhanel Usonkul | All rights reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
